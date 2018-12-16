@@ -32,7 +32,7 @@ fig_pb_path=$output_dir/exported_graphs/$fig_pb
 cp $dataset_dir/$config $pipeline_config_path
 cp $dataset_dir/$fig_pb $fig_pb_path
 
-for i in {0..4}  # for循环中的代码执行5此，这里的左右边界都包含，也就是一共训练500个step，每100step验证一次
+for i in {0..1}  # for循环中的代码执行5此，这里的左右边界都包含，也就是一共训练500个step，每100step验证一次
 do
     echo "############" $i "runnning #################"
     last=$[$i*1]
