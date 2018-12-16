@@ -22,7 +22,7 @@ pipeline_config_path=$output_dir/$config
 
 # frozen_inference_graph.pb文件
 fig_pb=frozen_inference_graph.pb
-fig_pb_path=$output_dir/$fig_pb
+fig_pb_path=$output_dir/exported_graphs/$fig_pb
 
 # 先清空输出目录，本地运行会有效果，tinymind上运行这一行没有任何效果
 # tinymind已经支持引用上一次的运行结果，这一行需要删掉，不然会出现上一次的运行结果被清空的状况。
